@@ -1,1 +1,2 @@
-# construction-backend
+# Construction Backend
+This project is a Node.js-based backend API for managing construction-related data, including authentication, product management, and service handling. It uses MongoDB for database management and supports CRUD operations for various models.
