@@ -16,7 +16,7 @@ exports.createProject = async (req, res) => {
 
 exports.updateProject = async (req, res) => {
     const { image, name, address, features, price, description } = req.body;
-    const { id } = req.params;  // id'yi params'tan alıyoruz
+    const { id } = req.params;
     try {
         const project = await Project.findByIdAndUpdate(id, { image, name, address, features, price, description }, { new: true });
         res.status(201).send({ project });
