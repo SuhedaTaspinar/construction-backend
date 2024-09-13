@@ -10,8 +10,8 @@ router.put("/update-service/:id", auth, serviceController.updateService);
 
 router.delete("/delete-service/:id", auth, serviceController.deleteService);
 
-router.get("/get-service", auth, serviceController.getService)
+router.get("/get-service", serviceController.getService)
 
-router.get("/get-service-by-id/:id", auth, serviceController.getServiceById)
+router.get("/get-service-by-id/:id", serviceController.getServiceById)
 
 module.exports = router;
